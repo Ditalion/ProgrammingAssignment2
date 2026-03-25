@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## This function computes the inverse of the special matrix created above.
         ## Return a matrix that is the inverse of 'x'.
-        ## If it was already cached, it will get the cached data.
+        ## If it was already cached, it will get the cached data instead of recalculating it.
         m <- x$getsolve()
         if(!is.null(m)) {
                 message("getting cached data")
